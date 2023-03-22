@@ -1,0 +1,99 @@
+{
+    "loginpage":{
+        "heading": "अपने अकाउंट में लॉग इन करें",
+        "button": "लॉग इन",
+        "label": "उपयोगकर्ता नाम"
+    },
+    "homepage":{
+        "heading": "अधिकांश खरीदा गया उत्पाद",
+        "slider1_heading": "डेनिम लव",
+        "slider1_text": "डेनिम कभी भी स्टाइल से बाहर नहीं होता, इसे खरीदें",
+        "slider2_heading": "जूते",
+        "slider2_text": "हर अवसर के लिए एक जूता",
+        "slider3_heading": "कपड़े का कारखाना",
+        "slider3_text": "अपने कपड़ों के संग्रह के लिए कपड़ों की एक विस्तृत श्रृंखला से खोजें",
+        "button_tooltip1": "कार्ट में डालें" ,
+        "button_tooltip2": "उत्पाद विवरण",
+        "button_tooltip3": "समान देखें"
+    },
+    "header":{
+        "category": "वर्ग",
+        "language": "भाषा",
+        "language1" : "अंग्रेज़ी",
+        "language2" : "हिंदी",
+        "all_products": "सभी प्रोडक्ट",
+        "searchlabel" : "खोजे",
+        "carttooltip": "कार्ट",
+        "logintooltip": "लॉग इन",
+        "logouttooltip": "लॉग आउट",
+        "men" : "पुरुष",
+        "women" : "महिला",
+        "dresses": "पोशाक",
+        "tshirt": "टी शर्ट",
+        "shirt": "शर्ट",
+        "tops": "उपर का पोषक",
+        "trousers": "पतलून",
+        "jeans": "जींस",
+        "shorts": "निकर",
+        "joggers": "जॉगिंग का कपड़ा",
+        "topwear": "ऊपर का कपड़ा",
+        "bottomwear": "नीचे का कपड़ा",
+        "trackpants": "ट्रैक पैंट"
+    },
+    "productlist":{
+        "button": "कार्ट में डालें",
+        "noproductfound": "कोई उत्पाद नहीं मिला, अलग कीवर्ड के साथ खोज करने का प्रयास करें"
+    },
+    "productdetailpage":{
+        "button": "कार्ट में डालें",
+        "category": "वर्ग",
+        "quantity": "मात्रा"
+    },
+    "cartpage":{
+        "heading": "कार्ट आइटम:",
+        "emptymessage": "आपके कार्ट में कोई आइटम नहीं है |",
+        "infomessage": "खरीदारी में देरी न करें, अपने कार्ट में आइटम जोड़ने का मतलब यह नहीं है कि उनकी बुकिंग हो गई है |",
+        "heading2": "कुल राशि ब्रेकडाउन:",
+        "column1": "कीमत x मात्रा",
+        "column2": "परिकलित मूल्य",
+        "dummy_row": "शिपिंग",
+        "final_row1": "कुल राशि है",
+        "final_row2": "(शिपिंग सहित)",
+        "button": "चेक आउट करे",
+        "errormessage": "कार्ट खाली है",
+        "quantitylimit": "10 इकाइयों तक सीमित",
+        "removebutton": "आइटम हटाये"
+    },
+    "checkoutpage":{
+        "heading": "चेक आउट करें",
+        "firstname": "पहला नाम",
+        "firstnameerror": "पहला नाम की आवश्यकता है",
+        "lastname": "अंतिम नाम",
+        "lastnameerror": "अंतिम नाम की आवश्यकता है",
+        "email": "ईमेल",
+        "emailerror1": "ईमेल की आवश्यकता है",
+        "emailerror2": "अमान्य ईमेल", 
+        "phonenumber": "फ़ोन नंबर",
+        "phonenumbererror1": "फ़ोन नंबर की आवश्यकता है",
+        "phonenumbererror2": "अमान्य फ़ोन नंबर",
+        "address": "डिलिवरी का पता",
+        "addresserror": "डिलिवरी के पता की आवश्यकता है",
+        "city": "सिटी",
+        "cityerror": "सिटी की आवश्यकता है",
+        "zip": "डाक कोड",
+        "ziperror": "डाक कोड की आवश्यकता है",
+        "button": "चेक आउट करें",
+        "checkouterror": "कार्ट खाली है"
+    },
+    "toastrmessages":{
+        "loginsuccess": "लॉग इन सफल",
+        "loginrequired": "पहले लॉग इन करो",
+        "orderplaced": "Order सफलतापूर्वक रखा गया",
+        "usernamepasswordrequired": "उपयोगकर्ता नाम और पासवर्ड आवश्यक है",
+        "usernamerequired": "उपयोगकर्ता का नाम आवश्यक",
+        "passwordrequired": "पासवर्ड आवश्यक",
+        "incorrect": "गलत उपयोगकर्ता नाम या पासवर्ड"
+        
+    }
+
+}

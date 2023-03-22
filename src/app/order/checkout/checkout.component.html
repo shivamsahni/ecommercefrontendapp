@@ -1,0 +1,202 @@
+<div class="container">
+    <div class="card">
+        <form novalidate #checkout="ngForm">
+            <h5 class="text-center">{{'checkoutpage.heading' | translate}}</h5>
+            <div class="p-fluid p-formgrid p-grid">
+                <div class="p-field p-col-12 p-md-6">
+                    <span class="p-float-label">
+                        <input 
+                                id="firstname" 
+                                type="text" 
+                                name="firstname" 
+                                #firstnameVar="ngModel" 
+                                [(ngModel)]="checkoutData.firstname"
+                                required
+                                [ngClass] = "{
+                                    'is-invalid': (firstnameVar.touched || firstnameVar.dirty) && !firstnameVar.valid
+                                }" 
+                                class="p-inputtext p-component" 
+                                pInputText>
+                        <label for="firstname">{{'checkoutpage.firstname' | translate}}</label>
+                        <span class="invalid-feedback">
+                            <span *ngIf="firstnameVar.errors?.required">
+                                {{'checkoutpage.firstnameerror' | translate}}
+                            </span>
+                        </span>
+                    </span>
+
+                </div>
+                <div class="p-field p-col-12 p-md-6">
+                    <span class="p-float-label">
+                        <input 
+                                id="lastname" 
+                                type="text" 
+                                name="lastname"
+                                #lastnameVar="ngModel" 
+                                [(ngModel)]="checkoutData.lastname"
+                                required 
+                                [ngClass] = "{
+                                    'is-invalid' : (lastnameVar.touched || lastnameVar.dirty) && !lastnameVar.valid
+                                }"
+                                class="p-inputtext p-component" 
+                                pInputText>
+                        <label for="lastname">{{'checkoutpage.lastname' | translate}}</label>
+                        <span class="invalid-feedback">
+                            <span *ngIf="lastnameVar.errors?.required">
+                                {{'checkoutpage.lastnameerror' | translate}}
+                            </span>
+                        </span>
+                    </span>
+                    <br>
+                </div>
+                <div class="p-field p-col-12 p-md-6">
+                    <span class="p-float-label">
+                        <input 
+                                id="Email" 
+                                type="email" 
+                                name="email" 
+                                #emailVar="ngModel"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                [(ngModel)]="checkoutData.email" 
+                                required 
+                                [ngClass] = "{
+                                    'is-invalid' : (emailVar.touched || emailVar.dirty) && !emailVar.valid
+                                }"
+                                class="p-inputtext p-component" 
+                                pInputText>
+                        <label for="Email">{{'checkoutpage.email' | translate}}</label>
+                        <span class="invalid-feedback">
+                            <span *ngIf="emailVar.errors?.required">
+                                {{'checkoutpage.emailerror1' | translate}}
+                            </span>
+                            <span *ngIf="emailVar.errors?.pattern">
+                                {{'checkoutpage.emailerror2' | translate}}
+                            </span>
+                        </span>
+                    </span>
+    
+                </div>
+                <div class="p-field p-col-12 p-md-6">
+                    <span class="p-float-label">
+                        <input 
+                                id="Phonenumber" 
+                                type="text" 
+                                name="phonenumber"
+                                pattern="^((\\+91-?)|0)?[0-9]{10}$" 
+                                #phonenumberVar="ngModel"
+                                [(ngModel)]="checkoutData.phonenumber" 
+                                required 
+                                [ngClass] = "{
+                                    'is-invalid' : (phonenumberVar.touched || phonenumberVar.dirty) && !phonenumberVar.valid
+                                }"
+                                class="p-inputtext p-component" 
+                                pInputText>
+                        <label for="Phonenumber">{{'checkoutpage.phonenumber' | translate}}</label>
+                        <span class="invalid-feedback">
+                            <span *ngIf="phonenumberVar.errors?.required">
+                                {{'checkoutpage.phonenumbererror1' | translate}}
+                            </span>
+                            <span *ngIf="phonenumberVar.errors?.pattern">
+                                {{'checkoutpage.phonenumbererror2' | translate}}
+                            </span>
+                        </span>
+                    </span>
+                </div>
+    
+                <!-- <textarea rows="5" cols="30" pinputtextarea="" class="p-inputtextarea p-inputtext p-component"></textarea> -->
+    
+                <div class="p-field p-col-12 mylabel">
+                    <label for="address mylabel">{{'checkoutpage.address' | translate}}</label>
+                    <textarea 
+                                id="address" 
+                                type="text" 
+                                name="address" 
+                                #addressVar="ngModel"
+                                [(ngModel)]="checkoutData.address" 
+                                required 
+                                [ngClass] = "{
+                                    'is-invalid' : (addressVar.touched || addressVar.dirty) && !addressVar.valid
+                                }"
+                                rows="4" 
+                                pinputtextarea
+                                class="p-inputtextarea p-inputtext p-component">
+                    </textarea>
+                    <span class="invalid-feedback">
+                        <span *ngIf="addressVar.errors?.required">
+                            {{'checkoutpage.addresserror' | translate}}
+                        </span>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-md-6">
+                    <span class="p-float-label">
+                        <input 
+                                id="city" 
+                                type="text" 
+                                name="city" 
+                                #cityVar="ngModel"
+                                [(ngModel)]="checkoutData.city" 
+                                required 
+                                [ngClass] = "{
+                                    'is-invalid' : (cityVar.touched || cityVar.dirty) && !cityVar.valid
+                                }"
+                                class="p-inputtext p-component" 
+                                pInputText>
+                        <label for="city">{{'checkoutpage.city' | translate}}</label>
+                        <span class="invalid-feedback">
+                            <span *ngIf="cityVar.errors?.required">
+                                {{'checkoutpage.cityerror' | translate}}
+                            </span>
+                        </span>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-md-6 zip">
+                    <span class="p-float-label">
+                        <input 
+                                id="zip" 
+                                type="text" 
+                                name="zip" 
+                                #zipVar="ngModel"
+                                [(ngModel)]="checkoutData.zip" 
+                                required 
+                                [ngClass] = "{
+                                    'is-invalid' : (zipVar.touched || zipVar.dirty) && !zipVar.valid
+                                }"
+                                class="p-inputtext p-component" 
+                                pInputText>
+                        <label for="zip">{{'checkoutpage.zip' | translate}}</label>
+                        <span class="invalid-feedback">
+                            <span *ngIf="zipVar.errors?.required">
+                                {{'checkoutpage.ziperror' | translate}}
+                            </span>
+                        </span>
+                    </span>
+                </div>
+                <div class="p-field p-col-6 p-sm-2 p-offset-4 checkout-btn ">
+                    <p-button    
+                                (onClick)="save(checkout)"
+                                id="checkout-btn" 
+                                [disabled]="(cartService.cartItems$ | async)?.length==0 || checkout.valid==false"
+                                [ngClass] = "{
+                                    'is-invalid' : !checkout.valid
+                                }" 
+                                label="{{'checkoutpage.button' | translate}}"
+                    >
+                    </p-button>
+                    <!-- <button id="checkout-btn" [disabled]="(cartService.cartItems$ | async)?.length==0" type="button" routerLink="/checkout" class="btn btn-primary btn-block">go to checkout</button>  -->
+                    <!-- <button id="checkout-btn" [disabled]="(cartService.cartItems$ | async)?.length==0" type="button" routerLink="/checkout" class="btn btn-primary btn-block">go to checkout</button>  -->
+                    <!-- <small [hidden]="(cartService.cartItems$ | async)?.length!=0" style="color: red;"
+                        id="checkout-btn-help">Cart is Empty, Please add some products & try again...</small> -->
+                    <small *ngIf="(cartService.cartItems$ | async)?.length==0" style="color: red; ">
+                        {{'checkoutpage.checkouterror' | translate}}
+                    </small>
+
+                    <!-- <span class="invalid-feedback">
+                    <span *ngIf="checkout.valid==false">
+                        Kindly Correct Errors
+                    </span>
+                    </span> -->
+                    
+                </div>
+            </div>
+        </form>
+    </div>

@@ -1,0 +1,98 @@
+{
+    "loginpage":{
+        "heading": "Login to your account",
+        "button": "Login",
+        "label": "Username"
+    },
+    "homepage":{
+        "heading": "Most Bought Products",
+        "slider1_heading": "Denim Love",
+        "slider1_text": "Denim never gets out of style, grab one",
+        "slider2_heading": "Shoes",
+        "slider2_text": "A Shoes for every occation",
+        "slider3_heading": "Clothes Factory",
+        "slider3_text": "Search from a wide Range of clothes for your closet",
+        "button_tooltip1": "Add to Cart" ,
+        "button_tooltip2": "Product Details",
+        "button_tooltip3": "Similar Products"
+    },
+    "header":{
+        "category": "Category",
+        "language": "Language",
+        "language1" : "English",
+        "language2" : "Hindi",
+        "all_products": "All Products",
+        "searchlabel" : "Search",
+        "carttooltip" : "Cart",
+        "logintooltip": "Login",
+        "logouttooltip": "Logout",
+        "men" : "Men",
+        "women" : "Women",
+        "dresses": "Dresses",
+        "tshirt": "T-shit",
+        "shirt": "Shirt",
+        "tops": "Tops",
+        "trousers": "Trousers",
+        "jeans": "Jeans",
+        "shorts": "Shorts",
+        "joggers": "Joggers",
+        "trackpants": "Trackpants",
+        "topwear": "TopWear",
+        "bottomwear": "BottomWear"
+    },
+    "productlist":{
+        "button": "Add To Cart",
+        "noproductfound": "No Product Found, try Searching with different Keyword..."
+    },
+    "productdetailpage":{
+        "button": "Add To Cart",
+        "category": "Category",
+        "quantity": "Quantity"
+    },
+    "cartpage":{
+        "heading": "Cart items:",
+        "emptymessage": "No item in your cart...",
+        "infomessage": "Do not delay the purchase, adding items to your cart does not mean booking them.",
+        "heading2": "Total amount Breakdown:",
+        "column1": "Price x Quantity",
+        "column2": "Calculated Price",
+        "dummy_row": "Shipping",
+        "final_row1": "The total amount of",
+        "final_row2": "(including shipping)",
+        "button": "Go To Checkout",
+        "errormessage": "Cart is Empty",
+        "quantitylimit": "Limited to 10 Units",
+        "removebutton": "Remove Item"
+    },
+    "checkoutpage":{
+        "heading": "Checkout",
+        "firstname": "Firstname",
+        "firstnameerror": "Firstname is required",
+        "lastname": "Lastname",
+        "lastnameerror": "Lastname is required",
+        "email": "Email",
+        "emailerror1": "Email ID is Required",
+        "emailerror2": "Invalid Email ID", 
+        "phonenumber": "Phonenumber",
+        "phonenumbererror1": "Phonenumber is required",
+        "phonenumbererror2": "Invalid Phonenumber",
+        "address": "Delivery Address",
+        "addresserror": "Delivery Address is required",
+        "city": "City",
+        "cityerror": "City is required",
+        "zip": "Zip",
+        "ziperror": "Zip Code is required",
+        "button": "Checkout",
+        "checkouterror": "Cart is Empty"
+    },
+    "toastrmessages":{
+        "loginsuccess": "Login Successfull",
+        "loginrequired": "kindly Login first...",
+        "usernamepasswordrequired": "Username & Password required",
+        "usernamerequired": "Username required",
+        "passwordrequired": "Password required",
+        "incorrect": "Incorrect Username Or Password",
+        "orderplaced": "Order Placed Successfully, Continue Shopping..."
+    }    
+
+}

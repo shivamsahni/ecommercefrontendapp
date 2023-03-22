@@ -1,0 +1,36 @@
+<div class="row mb-4">
+    <div class="col-md-5 col-lg-3 col-xl-3">
+      <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+        <img class="img-fluid w-100"
+          src="{{cartItem?.imageURL}}" alt="{{cartItem?.name}}">
+      </div>
+    </div>
+    <div class="col-md-7 col-lg-9 col-xl-9">
+      <div>
+        <div class="d-flex justify-content-between">
+          <div>
+            <h5>{{cartItem?.name}}</h5>
+          </div>
+          <div>
+            <div class="def-number-input number-input safari_only mb-0 w-100">
+                <ng-container *ngIf="cartItem!==undefined">
+                    <p-inputNumber [(ngModel)]="cartItem!.quantity" [min]="1" [max]="100" (onInput)='updateQuantity()' [showButtons]="true"  ></p-inputNumber>
+                    <!-- <small id="minmax-buttons-help">{{'cartpage.quantitylimit' | translate}}</small> -->
+                </ng-container>             
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <a type="button" (click)="removeFromCart()" class="card-link-secondary small text-uppercase mr-3"><i
+                class="fas fa-trash-alt mr-1"></i>{{'cartpage.removebutton' | translate}}</a>
+          </div>
+          <p class="mb-0"><span><strong id="summary">{{cartItem?.price | currency:'INR'}}</strong></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+

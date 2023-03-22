@@ -1,0 +1,84 @@
+<!--Section: Block Content-->
+<div class="container">
+    <section>
+
+        <!--Grid row-->
+        <div class="row">
+      
+          <!--Grid column-->
+          <div class="col-lg-8">
+      
+            <!-- Card -->
+            <div class="mb-3">
+              <div class="pt-4 wish-list">
+      
+                <h5 class="mb-4">{{'cartpage.heading' | translate}}</h5>
+                  <div *ngFor="let item of cartService.cartItems$ | async">
+                    <app-cart-item [cartItem]="item" ></app-cart-item>
+                    <hr class="mb-4">
+                </div>
+                <div *ngIf="(cartService.cartItems$ | async)?.length==0">
+                  {{'cartpage.emptymessage' | translate}}                  
+                </div>
+                <br>
+                <p class="text-primary mb-0"><i class="pi pi-info-circle
+                    "></i>{{'cartpage.infomessage' | translate}}</p>
+      
+              </div>
+            </div>
+            <!-- Card -->
+      
+          </div>
+          <!--Grid column-->
+      
+          <!--Grid column-->
+          <div class="col-lg-4 side-amount">
+      
+            <!-- Card -->
+            <div class="mb-3 ">
+              <div class="pt-4">
+      
+                <h5 class="mb-3">{{'cartpage.heading2' | translate}}</h5>
+      
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <strong>{{'cartpage.column1' | translate}}</strong>
+                    <span><strong>{{'cartpage.column2' | translate}}</strong></span>
+                  </li>
+
+                  <li *ngFor="let item of cartService.cartItems$ | async" class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    {{item.price}} x {{item.quantity}}
+                    <span>{{item.calculatedPrice | currency:'INR'}}</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    {{'cartpage.dummy_row' | translate}}
+                    <span>{{0|currency:'INR'}}</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                    <div>
+                      <strong>{{'cartpage.final_row1' | translate}}</strong>
+                      <strong>
+                        <p class="mb-0">{{'cartpage.final_row2' | translate}}</p>
+                      </strong>
+                    </div>
+                    <span><strong>{{cartService.cartTotal$|async|currency:'INR'}}</strong></span>
+                  </li>
+                </ul>
+      
+                <button id="checkout-btn" [disabled]="(cartService.cartItems$ | async)?.length==0" type="button" routerLink="/checkout" class="btn btn-primary btn-block">{{'cartpage.button' | translate}}</button>
+                <small [hidden]="(cartService.cartItems$ | async)?.length!=0" style="color: red;" id="checkout-btn-help">{{'cartpage.errormessage' | translate}}</small>
+              </div>
+            </div>
+      
+          </div>
+          <!--Grid column-->
+      
+        </div>
+        <!-- Grid row -->
+      
+      </section>
+      <!--Section: Block Content-->
+    
+</div>
+
+

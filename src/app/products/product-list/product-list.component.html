@@ -1,0 +1,14 @@
+<div class="container">
+    <ng-template [ngIf]="(productService.Products$ | async)?.length===0" [ngIfElse]="show">
+        <p>
+            {{'productlist.noproductfound' | translate}}...
+        </p>
+    </ng-template>
+    <ng-template #show>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let product of productService.Products$ | async">
+          <app-product-item [productItem]="product" ></app-product-item>
+        </div>
+    </div>
+    </ng-template>
+</div>

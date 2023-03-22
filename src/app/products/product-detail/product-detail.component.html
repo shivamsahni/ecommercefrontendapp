@@ -1,0 +1,48 @@
+<!--Section: Block Content-->
+<div class="container">
+
+    <section class="mb-5" *ngIf="productItem!==null">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+
+                <div class="card text-center">
+                        <div class="col-12 mb-0">
+                            <figure class="view overlay rounded z-depth-1 main-img">
+                                
+                                <img src={{productItem?.imageURL}} alt={{productItem?.name}} class="img-fluid z-depth-1">
+
+                            </figure>
+                        </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <br>
+                <h5>{{productItem?.name | titlecase}}</h5>
+                <p><span class="mr-1"><strong>{{productItem?.price | currency:'INR'}}</strong></span></p>
+                <p class="pt-1">{{productItem?.description}}</p>
+                <div class="table-responsive">
+                    <table class="table table-sm table-borderless mb-0">
+                        <tbody>
+                            <tr>
+                                <th class="pl-0 w-25" scope="row"><strong>{{'productdetailpage.category' | translate}}</strong></th>
+                                <td>{{productItem?.category | titlecase}}</td>
+                            </tr>
+                            <!-- <tr>
+                                <th class="pl-0 w-25" scope="row"><strong>{{'productdetailpage.quantity' | translate}}</strong></th>
+                                <td>{{productItem?.quantity}}</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <br>
+                <button id="addtocart" (click)="addToCart()" [disabled]='(accountService.currentUser$ | async)?.username==""' type="button" class="btn btn-primary btn-md mr-1 mb-2">{{'productdetailpage.button' | translate}}</button>
+                <br>
+                <small [hidden]="accountService.isLoggedIn()" id="addtocart-help">Login for Add to Cart</small>
+            </div>
+        </div>
+
+    </section>
+    <!--Section: Block Content-->
+</div>

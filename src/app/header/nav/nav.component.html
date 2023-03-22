@@ -1,0 +1,30 @@
+<p-menubar class="nav-bar" [model]="items" [baseZIndex]=4>    
+    <ng-template id="nav-bar-data" pTemplate="start">
+    <a routerLink="/">
+        <img src="assets/components/images/online-shopping3.svg" height="40" class="p-mr-2">
+    </a>
+    </ng-template>
+  
+    <ng-template pTemplate="end">
+
+        <form #search = "ngForm" (ngSubmit)=(searchIt()) autocomplete="false">  
+
+            <i pbadge="" routerLink="/cart" severity="danger" id="cartIcon" class="pi pi-shopping-cart p-mr-2 p-overlay-badge cart" style="font-size: 25px;" pTooltip="{{'header.carttooltip' | translate}}" tooltipPosition="bottom">
+                <span *ngIf="(cartService.cartItems$ | async)?.length!==0" id="cartBadge" style="font-size: 10px;" class="p-badge p-component p-badge-danger" >{{(cartService.cartItems$ | async)?.length}}</span>
+            </i>
+
+            <input type="text" id="search-input" size="40" name="search" [(ngModel)]="searchProduct"  pInputText class="p-inputtext p-component ng-pristine ng-valid ng-touched" placeholder="{{'header.searchlabel' | translate}}">            
+            
+            <i routerLink="/" (click)="login()" id="login" [hidden]='(accountService.currentUser$ | async)?.username!=""' severity="danger" class="pi pi-user-plus p-mr-4 p-text-secondary" style="font-size: 25px;" pTooltip="{{'header.logintooltip' | translate}}"
+            tooltipPosition="bottom">
+            </i>
+
+            <i routerLink="/" id="logout" (click)="logout()" [hidden]='(accountService.currentUser$ | async)?.username==""' severity="danger" class="pi pi-user-minus p-mr-4 p-text-secondary" style="font-size: 25px;" pTooltip="{{'header.logouttooltip' | translate}}"
+            tooltipPosition="bottom">
+            </i>
+
+        </form>
+    </ng-template>
+</p-menubar>
+
+

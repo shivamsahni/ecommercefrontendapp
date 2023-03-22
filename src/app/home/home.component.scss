@@ -1,0 +1,23 @@
+.slider{
+    overflow: hidden;
+}
+
+body{
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    width:  200px;
+    height: 250px;
+    object-fit: cover;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    z-index: -200; 
+}
+
+#add2cart{
+    margin-left: 4px;
+}
+

@@ -1,0 +1,33 @@
+<img src="../../assets/components/images/homepageimages/slider3.jpg" alt="third slide"
+  style="display: block; width: 100%;">
+
+<h3 style="text-align: center; padding-top: 2rem; padding-bottom: 1rem;">{{ 'homepage.heading' | translate}}</h3>
+<p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true"
+  [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+  <ng-template let-product pTemplate="item">
+    <div class="product-item">
+      <div class="product-item-content">
+        <div class="p-mb-3">
+          <img (click)="goToProductDetailPage(product.id, product?.category)" [src]="product.imageURL" [alt]="product.name"
+            class="product-image" />
+        </div>
+        <div>
+          <h4 class="p-mb-1" id="productname">{{product.name}}</h4>
+          <h6 class="p-mt-1 p-mb-3" id="productprice">{{product.price | currency:'INR'}} </h6>
+          <div class="car-buttons p-mt-5">
+            <p-button id="add2cart" [disabled]='(accountService.currentUser$ | async)?.username==""'
+              (click)="handleAddToCart(product.id, product?.category)" type="button" styleClass="p-button p-button-rounded p-mr-2"
+              icon="pi pi-shopping-cart" pTooltip="{{ 'homepage.button_tooltip1' | translate}}"
+              tooltipPosition="bottom"></p-button>
+            <p-button (click)="goToProductDetailPage(product.id, product?.category)" type="button"
+              styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-send"
+              pTooltip="{{ 'homepage.button_tooltip2' | translate}}" tooltipPosition="bottom"></p-button>
+            <p-button [routerLink]="['/products']" [queryParams]="{ category: product?.category}" type="button"
+              styleClass="p-button-help p-button-rounded" icon="pi pi-sitemap"
+              pTooltip="{{ 'homepage.button_tooltip3' | translate}}" tooltipPosition="bottom"></p-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

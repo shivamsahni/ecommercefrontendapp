@@ -1,0 +1,248 @@
+{
+    "users": [
+        {
+            "username": "shivam",
+            "password": "shivam"
+        },
+        {
+            "username": "admin",
+            "password": "admin"
+        }
+    ],
+    "products": [
+        {
+            "id": "1",
+            "name": "Chips",
+            "description": "This is chips snacks",
+            "price": "50",
+            "quantity": "100",
+            "category": "snacks",
+            "imageURL": "../../../assets/components/images/productimages/chipssnacks.jfif"
+        },
+        {
+            "id": "2",
+            "name": "Tshirt",
+            "description": "This one is a collar tshirt",
+            "price": "700",
+            "quantity": "100",
+            "category": "topwear",
+            "imageURL": "../../../assets/components/images/productimages/collartshirttopwear.jfif"
+        },        
+        {
+            "id": "3",
+            "name": "Converse Shoes",
+            "description": "Converse hip length cool sneakers",
+            "price": "2200",
+            "quantity": "100",
+            "category": "shoes",
+            "imageURL": "../../../assets/components/images/productimages/converseshoes.jfif"
+        },        
+        {
+            "id": "4",
+            "name": "Fila Slippers",
+            "description": "Fila slippers for daily use",
+            "price": "900",
+            "quantity": "100",
+            "category": "slippers",
+            "imageURL": "../../../assets/components/images/productimages/filaslippers.jfif"
+        },        
+        {
+            "id": "5",
+            "name": "IFB Microwave",
+            "description": "Induction IFB microwave",
+            "price": "8000",
+            "quantity": "100",
+            "category": "microwave",
+            "imageURL": "../../../assets/components/images/productimages/IFBmicrowave.jfif"
+        },        
+        {
+            "id": "6",
+            "name": "Iphone 12",
+            "description": "Iphone 12 is here to rock again",
+            "price": "120000",
+            "quantity": "100",
+            "category": "touch mobile",
+            "imageURL": "../../../assets/components/images/productimages/iphonemobile.jfif"
+        },        
+        {
+            "id": "7",
+            "name": "Denim Jeans",
+            "description": "Cool ripped denim jeans",
+            "price": "1800",
+            "quantity": "100",
+            "category": "bottomwear",
+            "imageURL": "../../../assets/components/images/productimages/jeansbottomwear.jfif"
+        },        
+        {
+            "id": "8",
+            "name": "Kent Blender",
+            "description": "Kent hand blender 1200 watt",
+            "price": "2000",
+            "quantity": "100",
+            "category": "blender",
+            "imageURL": "../../../assets/components/images/productimages/kenthandblender.jfif"
+        },        
+        {
+            "id": "9",
+            "name": "Kurkure",
+            "description": "Tangy crunchy Tasty Kurkure",
+            "price": "20",
+            "quantity": "100",
+            "category": "snacks",
+            "imageURL": "../../../assets/components/images/productimages/kurkuresnacks.jfif"
+        },        
+        {
+            "id": "10",
+            "name": "LG Microwave",
+            "description": "Lg microwave with auto cock",
+            "price": "12000",
+            "quantity": "100",
+            "category": "microwave",
+            "imageURL": "../../../assets/components/images/productimages/LGmicrowave.jfif"
+        },        
+        {
+            "id": "11",
+            "name": "LG Refrigerator",
+            "description": "LG single door refrigerator",
+            "price": "20000",
+            "quantity": "100",
+            "category": "refrigerator",
+            "imageURL": "../../../assets/components/images/productimages/LgSingledoorFridge.jfif"
+        },        
+        {
+            "id": "12",
+            "name": "Maggi",
+            "description": "2 minute tasty maggi noodles",
+            "price": "12",
+            "quantity": "100",
+            "category": "pasta and noodles",
+            "imageURL": "../../../assets/components/images/productimages/magginoddle.jfif"
+        },        
+        {
+            "id": "13",
+            "name": "Nike Flip Flops",
+            "description": "Nike orginal black flip flops",
+            "price": "2400",
+            "quantity": "100",
+            "category": "flipflops",
+            "imageURL": "../../../assets/components/images/productimages/nikeflipflop.jfif"
+        },        
+        {
+            "id": "14",
+            "name": "Nike Shoes",
+            "description": "Nike black with color shoes",
+            "price": "6000",
+            "quantity": "100",
+            "category": "shoes",
+            "imageURL": "../../../assets/components/images/productimages/nikeshoes.jfif"
+        },        
+        {
+            "id": "15",
+            "name": "Nokia Keypad Mobile",
+            "description": "Nokia durable keypad mobile phone",
+            "price": "2200",
+            "quantity": "100",
+            "category": "keypad mobile",
+            "imageURL": "../../../assets/components/images/productimages/nokiakeypadmobile.jfif"
+        },        
+        {
+            "id": "16",
+            "name": "Panasonic Refrigerator",
+            "description": "A Double door Refrigerator",
+            "price": "40000",
+            "quantity": "100",
+            "category": "refrigerator",
+            "imageURL": "../../../assets/components/images/productimages/Panasonicdoubledoorfridge.jfif"
+        },        
+        {
+            "id": "17",
+            "name": "Pasta",
+            "description": "Penny Penny Italian Pasta",
+            "price": "40",
+            "quantity": "100",
+            "category": "pasta and noodles",
+            "imageURL": "../../../assets/components/images/productimages/pasta.jfif"
+        },        
+        {
+            "id": "18",
+            "name": "Philips Mixer Grinder",
+            "description": "Brand new Philips mixer grinder",
+            "price": "4000",
+            "quantity": "100",
+            "category": "mixer grinder",
+            "imageURL": "../../../assets/components/images/productimages/philipsmixergrinder.jfif"
+        },        
+        {
+            "id": "19",
+            "name": "Prestidge mixer grinder",
+            "description": "Latest Prestidge mixer grinder",
+            "price": "3000",
+            "quantity": "100",
+            "category": "mixer",
+            "imageURL": "../../../assets/components/images/productimages/prestidgemixergrinder.jfif"
+        },        
+        {
+            "id": "20",
+            "name": "Samsung S20",
+            "description": "Samsung punch hole camera s20",
+            "price": "80000",
+            "quantity": "100",
+            "category": "touch mobile",
+            "imageURL": "../../../assets/components/images/productimages/samsungmobile.jfif"
+        },        
+        {
+            "id": "21",
+            "name": "Samsung TV",
+            "description": "43 inch samsung smart tv",
+            "price": "60000",
+            "quantity": "100",
+            "category": "tv",
+            "imageURL": "../../../assets/components/images/productimages/samsungtv.jfif"
+        },        
+        {
+            "id": "22",
+            "name": "Skecher Shoes",
+            "description": "Skeckers Running Shoes",
+            "price": "4500",
+            "quantity": "100",
+            "category": "shoes",
+            "imageURL": "../../../assets/components/images/productimages/skechersshoes.jfif"
+        },        
+        {
+            "id": "23",
+            "name": "Superdry Flip Flops",
+            "description": "Parrot color superdry flip flops",
+            "price": "3000",
+            "quantity": "100",
+            "category": "flip flops",
+            "imageURL": "../../../assets/components/images/productimages/superdryflipflops.jfif"
+        },        
+        {
+            "id": "24",
+            "name": "TCL TV",
+            "description": "TCL 60 inch led smart tv",
+            "price": "40000",
+            "quantity": "100",
+            "category": "tv",
+            "imageURL": "../../../assets/components/images/productimages/TCLtv.jfif"
+        },        
+        {
+            "id": "25",
+            "name": "Tshirt Dual Pack",
+            "description": "Tshirt dual pack red and blue",
+            "price": "800",
+            "quantity": "100",
+            "category": "tshirt",
+            "imageURL": "../../../assets/components/images/productimages/tshirtstopwear.jfif"
+        },        
+        {
+            "id": "26",
+            "name": "Workout Pant",
+            "description": "Sweat absorber workout bottomwear",
+            "price": "600",
+            "quantity": "100",
+            "category": "bottomwear",
+            "imageURL": "../../../assets/components/images/productimages/workoutbottomwear.jfif"
+        }
+    ]
+}
